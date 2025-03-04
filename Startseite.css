@@ -14,12 +14,16 @@
 header{
   grid-area: header;
   display: grid;
+  height: 100vh;
   grid-template-columns: 1fr 6fr;
   grid-auto-rows: auto;
   grid-template-areas:
       "logoContainer nav"
       "einstieg einstieg";
   align-items: center;
+  background-image: url("Brücke.png"), url("Sternenhimmel.png");
+  background-size: cover, cover; /* volle Größe */
+  background-attachment: scroll, fixed; /* Parallax-Effekt */
 }
 nav{
   grid-area: nav;
@@ -40,6 +44,7 @@ nav ul li {
 .einstieg{
   grid-area: einstieg;
 }
+
 .logoContainer{
   grid-area: logoContainer;
 }

@@ -5,70 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Startseite.css">
   <title>Startseite</title>
-  <!--es fehlen noch die ganzen bilder die sollten dann auch vernünftig benannt werden
-  //kommt der header in den body oder kommt der vor dem body ? -->
 </head>
-<body>
-<div class="generalContainer">
-  <header>
-  <div class="logoContainer">
-    <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
-  </div>
-    <!--Navigation-->
-    <nav>
-      <ul>
-        <li><a href="Startseite.html">Startseite</a></li>
-        <li><a href="Gedenkseite.html">Gedenkseite</a></li>
-        <li><a href="Leistungen.html">Leistungen</a></li>
-        <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
-      </ul>
-    </nav>
-    <div class="einstieg">
-      <h1>Erinnerungen bewahren, Liebe teilen,
-        für immer verbunden sein</h1>
-      <p>Erstelle eine digitale Gedenkseite – teile Fotos, Geschichten und Erinnerungen
-        von deinen Liebsten und halte ihr Andenken lebendig.</p>
-      <a href="Leistungen.html" class="button" role="button" aria-label="Zu der Seite Leistungen">Jetzt Seite gestalten</a>
-      <div>
-      <!--vorbereitung bilder für parallax scroll effekt-->
-      <img class="initparallaxscroll" src="Sternenhimmel.jpg" alt="Blau gefüllter Hintergrund">
-      <img class="initparallaxscroll_1" src="Brücke.png" alt="Brücke aus orangenen Geranien">
-      </div>
-      <!--<button><img src="down-chevron.png"></button>-->
-     </div>
-  </header>
-  <main>
-  <div>
-    <h2>Erinnerungen</h2>
-    <p>Die Geschichten von Menschen prägen und verändern uns. Jedes Leben macht
-      einzigartige Erfahrungen. Von den Zeugen der Zeit können
-      wir viel lernen, wenn wir aufmerksam sind.  </p>
-  </div>
-  <div>
-    <div>
-      <img class="erstellen" src="bearbeiten.png" alt="Icon Stift und Blatt">
-      <p>Überlege dir welche Erinnerungen auf deiner
-      Seite stehen sollen und schicke uns alle wichtigen Inhalte</p>
+  <body>
+    <!--Grid Container-->
+    <div class="generalContainer">
+      <!-- header anfang includes: header;Navigation;Einstieg in die Website-->
+      <header>
+        <div class="logoContainer">
+          <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
+        </div>
+          <!--Navigation-->
+        <nav>
+          <ul>
+            <li><a href="Startseite.html">Startseite</a></li>
+            <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+            <li><a href="Leistungen.html">Leistungen</a></li>
+            <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+          </ul>
+        </nav>
+        <!--container für headline, kleiner Text und cta-button-->
+        <div class="einstieg">
+          <div class="headline1">
+          <h1>Erinnerungen bewahren, Liebe teilen,
+            für immer verbunden sein</h1>
+          <p>Erstelle eine digitale Gedenkseite – teile Fotos, Geschichten und Erinnerungen
+            von deinen Liebsten und halte ihr Andenken lebendig.</p>
+          <a href="Leistungen.html" class="button" role="button" aria-label="Zu der Seite Leistungen">Jetzt Seite gestalten</a>
+          </div>
+            <!--vorbereitung bilder für parallax scroll effekt
+          <div class="Bilder">
+            <img class="initparallaxscroll" src="Sternenhimmel.jpg" alt="Blau gefüllter Hintergrund">
+            <img class="initparallaxscroll_1" src="Brücke.png" alt="Brücke aus orangenen Geranien">
+          </div>
+          container ende-->
+        </div>
+      </header>
+      <!--main content, headline 2, Text und einführung in das konzept durch icons-->
+      <main>
+        <div>
+          <h2>Erinnerungen</h2>
+          <p>Die Geschichten von Menschen prägen und verändern uns. Jedes Leben macht
+            einzigartige Erfahrungen. Von den Zeugen der Zeit können
+            wir viel lernen, wenn wir aufmerksam sind. </p>
+        </div>
+        <!--div für einführung in konzept mit icons-->
+        <div>
+          <div>
+            <img class="erstellen" src="bearbeiten.png" alt="Icon Stift und Blatt">
+            <p>Überlege dir welche Erinnerungen auf deiner
+            Seite stehen sollen und schicke uns alle wichtigen Inhalte</p>
+          </div>
+          <div>
+            <img class="qrcode" src="qr-code.png" alt="Icon QR-Code">
+            <p>Wir erstellen deine Seite und schicken dir einen persönlichen
+            QR-Code um auf die Seite zu gelangen</p>
+          </div>
+          <div>
+            <img class="herz" src="herz.png" alt="icon herz">
+            <p>Jetzt kannst du deine Seite anschauen wann und wo immer du möchtest
+            um dich an deine liebsten zu erinnern.</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
+          <a href="/impressum.html">Impressum</a> |
+          <a href="/datenschutz.html">Datenschutz</a>
+        </p>
+      </footer>
+      <!--Grid Container ende-->
     </div>
-    <div>
-      <img class="qrcode" src="qr-code.png" alt="Icon QR-Code">
-      <p>Wir erstellen deine Seite und schicken dir einen persönlichen
-      QR-Code um auf die Seite zu gelangen</p>
-    </div>
-    <div>
-      <img class="herz" src="herz.png" alt="icon herz">
-      <p>Jetzt kannst du deine Seite anschauen wann und wo immer du möchtest
-      um dich an deine liebsten zu erinnern.</p>
-    </div>
-  </div>
-  </main>
-
-<footer>
-  <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
-    <a href="/impressum.html">Impressum</a> |
-    <a href="/datenschutz.html">Datenschutz</a>
-  </p>
-</footer>
-</div>
-</body>
+  </body>
 </html>
