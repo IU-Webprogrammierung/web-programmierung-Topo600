@@ -1,4 +1,7 @@
+/* Deaktivierung der Grids für das testen des Parallax-Scrolling-Effekt
+/*Grid Container für die ganze Seite
 .generalContainer{
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -11,6 +14,7 @@
   max-width: 250px;
   max-height: 60px;
 }
+/*Header als Grid um Positionierung zu erleichtern
 header{
   grid-area: header;
   display: grid;
@@ -21,9 +25,11 @@ header{
       "logoContainer nav"
       "einstieg einstieg";
   align-items: center;
-  background-image: url("Brücke.png"), url("Sternenhimmel.png");
-  background-size: cover, cover; /* volle Größe */
-  background-attachment: scroll, fixed; /* Parallax-Effekt */
+  background-image: url("Sternenhimmel.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 nav{
   grid-area: nav;
@@ -56,5 +62,64 @@ footer{
 }
 nav ul{
   list-style: none;
+}
+ */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* Parallax-Scrolling Effekt */
+.parallax {
+  position: relative;
+  height: 100vh; /* Höhe des Parallax-Containers */
+  background-image: url('Ringelblume_SW.png'); /* Hintergrundbild für Parallax */
+  background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Inhalt für den Parallax-Bereich */
+.content {
+  position: absolute;
+  top: 100%; /* Positionierung */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Zentrieren des Inhalts */
+  text-align: center;
+  z-index: 2; /* Damit der Inhalt über dem Parallax-Bereich bleibt */
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Sektion unter dem Parallax, in der das transparente Bild erscheint */
+.testsektion {
+  height: 100vh;
+  padding: 20px;
+  background-image: url('Ringelblume_allein.png'); /* Parallax-Hintergrundbild */
+  background-attachment: fixed; /* Parallax-Effekt */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Sektion unter Parallax */
+.section {
+  height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
