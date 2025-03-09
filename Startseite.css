@@ -1,5 +1,5 @@
 /* Deaktivierung der Grids für das testen des Parallax-Scrolling-Effekt
-/*Grid Container für die ganze Seite
+Grid Container für die ganze Seite*/
 .generalContainer{
   margin: 0;
   display: grid;
@@ -10,49 +10,10 @@
         "main main main"
         "footer footer footer";
 }
-.Logo{
-  max-width: 250px;
-  max-height: 60px;
-}
-/*Header als Grid um Positionierung zu erleichtern
+/*Header als Grid um Positionierung zu erleichtern*/
 header{
   grid-area: header;
-  display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 6fr;
-  grid-auto-rows: auto;
-  grid-template-areas:
-      "logoContainer nav"
-      "einstieg einstieg";
-  align-items: center;
-  background-image: url("Sternenhimmel.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-nav{
-  grid-area: nav;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav ul{
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
-nav ul li {
-  margin: 1rem;
-}
-.einstieg{
-  grid-area: einstieg;
-}
-
-.logoContainer{
-  grid-area: logoContainer;
 }
 main{
   grid-area: main;
@@ -60,10 +21,7 @@ main{
 footer{
   grid-area: footer;
 }
-nav ul{
-  list-style: none;
-}
- */
+
 body, html {
   height: 100%;
   margin: 0;
