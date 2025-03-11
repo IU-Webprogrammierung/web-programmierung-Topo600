@@ -4,16 +4,14 @@ Grid Container für die ganze Seite*/
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 100vh auto auto;
   grid-template-areas:
-        "header header header"
+        "main main main"
         "main main main"
         "footer footer footer";
 }
 /*Header als Grid um Positionierung zu erleichtern*/
 header{
-  grid-area: header;
-  height: 100vh;
 }
 main{
   grid-area: main;
@@ -63,6 +61,10 @@ li a {
 }
 /* Parallax-Scrolling Effekt */
 .parallax {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
   height: 100vh; /* Höhe des Parallax-Containers */
   background-image: url('Ringelblume_SW.png'); /* Hintergrundbild für Parallax */
@@ -74,13 +76,16 @@ li a {
 
 /* Inhalt für den Parallax-Bereich */
 .content {
+  /*
   position: absolute;
-  top: 100%; /* Positionierung */
+  top: 100%; /* Positionierung
   left: 50%;
-  transform: translate(-50%, -50%); /* Zentrieren des Inhalts */
+  transform: translate(-50%, -50%);  Zentrieren des Inhalts
   text-align: center;
-  z-index: 2; /* Damit der Inhalt über dem Parallax-Bereich bleibt */
+  z-index: 2; Damit der Inhalt über dem Parallax-Bereich bleibt */
   color: white;
+  padding: 100px;
+  position: fixed;
 }
 
 h1 {
@@ -90,14 +95,15 @@ h1 {
 
 p {
   font-size: 1.5rem;
-  color: #fff;
+  color: black;
 }
 
 /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
 .testsektion {
+
   height: 100vh;
   padding: 20px;
-  background-image: url('Ringelblume_allein.png'); /* Parallax-Hintergrundbild */
+  background-image: url('Ringelblume_Bunt.png'); /* Parallax-Hintergrundbild */
   background-attachment: fixed; /* Parallax-Effekt */
   background-position: center;
   background-repeat: no-repeat;
@@ -108,11 +114,70 @@ p {
   flex-direction: column;
 }
 
+
 /* Sektion unter Parallax */
 .section {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-image: url("Ringelblume_Bunt_1.png");
+  background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.section h2{
+  position: relative;
+  top: -15%;
+  background-color: #f2f2f2;
+}
+.section p{
+  position: relative;
+  top: -15%;
+  background-color: #f2f2f2;
+}
+div div img{
+  width: 200px;
+  background-color: #eada6c;
+  padding: 60px;
+}
+.images {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: -4%;
+}
+.erstellen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  padding: 50px;
+  text-align: center;
+}
+.qrcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  padding: 50px;
+  text-align: center;
+}
+.herz{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  max-width: 400px;
+  padding: 50px;
+  text-align: center;
+ }
+
 
 
