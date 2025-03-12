@@ -55,6 +55,7 @@ li a {
 }
 .navbarlogo {
   position: absolute;
+  align-items: center;
   display: inline-flex;
   z-index: 3;
   width: 100%;
@@ -141,6 +142,7 @@ p {
 }
 div div img{
   width: 200px;
+  height: 200px;
   background-color: #eada6c;
   padding: 60px;
 }
@@ -151,22 +153,25 @@ div div img{
   justify-content: center;
   top: -4%;
 }
+
+.images span{
+  font-size: 5rem;
+}
+
 .erstellen{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  padding: 50px;
+  max-width: 350px;
   text-align: center;
+  margin-right: 50px;
 }
 .qrcode{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 400px;
-  padding: 50px;
+  max-width: 350px;
   text-align: center;
 }
 .herz{
@@ -174,10 +179,12 @@ div div img{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-  max-width: 400px;
-  padding: 50px;
-  text-align: center;
+    max-width: 350px;
+    text-align: center;
  }
+.number3{
+  margin-left: 50px;
+}
 
 
 
