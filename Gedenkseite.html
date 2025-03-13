@@ -3,11 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Gedenkseite.css">
   <title>Title</title>
 </head>
 <body>
-  <header>
-    <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
+<!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
+<header>
+  <section class="navbarlogo">
+    <div class="logoContainer">
+      <img class="Logo" src="Logoweiß.png" alt="Logo Vektorgrafik einer brücke">
+    </div>
     <!--Navigation-->
     <nav>
       <ul>
@@ -17,10 +22,31 @@
         <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
       </ul>
     </nav>
-  </header>
+  </section>
+</header>
   <!--Blogeinträge gedenkseiten-->
   <h1>Wir erinnern uns an:</h1>
-    <!--blogeinträge - die können dann auch später mit einer datenbank verknüpft werden um dynamisch geladen zu werden-->
+
+  <div class="row">
+    <div class="column">
+      <div class="container">
+        <img src="Rambo.JPG" alt="Avatar" class="image">
+        <div class="overlay">My Name is Rambo<br><a href="person2.html">Zu meiner Seite</a></div>
+      </div>
+      <img src="Sternenhimmel.png">
+    </div>
+    <div class="column">
+      <img src="Rosemarie_Metzler.jpg">
+      <img src="herz.png">
+    </div>
+    <div class="column">
+      <img src="Rambo.JPG">
+    </div>
+    <div class="column">
+      <img src="Rosemarie_Metzler.jpg">
+    </div>
+  </div>
+  <!--blogeinträge - die können dann auch später mit einer datenbank verknüpft werden um dynamisch geladen zu werden
   <div class="gallerie">
     <a href="person1.html">
       <img src="" alt="Bild Max Mustermann">
@@ -35,6 +61,7 @@
       <p>Sabine Musterfrau (1970 - 2010)</p>
     </a>
   </div>
+  -->
 </body>
 <footer>
   <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.

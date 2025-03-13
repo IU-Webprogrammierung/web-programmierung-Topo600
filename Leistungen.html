@@ -3,55 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Forum&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Leistungen.css">
   <title>Title</title>
 </head>
 <body>
+<!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
 <header>
-  <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
-  <!--Navigation-->
-  <nav>
-    <ul>
-      <li><a href="Startseite.html">Startseite</a></li>
-      <li><a href="Gedenkseite.html">Gedenkseite</a></li>
-      <li><a href="Leistungen.html">Leistungen</a></li>
-      <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
-    </ul>
-  </nav>
+  <section class="navbarlogo">
+    <div class="logoContainer">
+      <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
+    </div>
+    <!--Navigation-->
+    <nav>
+      <ul>
+        <li><a href="Startseite.html">Startseite</a></li>
+        <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+        <li><a href="Leistungen.html">Leistungen</a></li>
+        <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+      </ul>
+    </nav>
+  </section>
 </header>
-<div>
-  <img src="Logo.png" alt="Logo Vektorgrafik einer brücke">
-</div>
-<div>
-  <div>
-    <p>Tarif 1</p>
+
+<div class="preise">
+  <div class="Karte">
+    <p>5 Euro</p>
     <ul>
-      <li><a>5 Jahre</a></li>
+      <li><a>1 Jahr</a></li>
       <li><a>Eine Änderung der Beiträge</a></li>
-      <li><a>50 Euro</a></li>
+      <li><a>Nur bei neueintrag</a></li>
     </ul>
+    <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
   </div>
-  <div>
-    <p>Tarif 2</p>
+  <div class="Karte">
+    <p>50 Euro</p>
     <ul>
-      <li><a>10 Jahre</a></li>
+      <li><a>3 Jahre</a></li>
       <li><a>Vier Änderung der Beiträge</a></li>
-      <li><a>100 Euro</a></li>
+      <li><a>Hohe Priorität bei der Beitragsanpassung</a></li>
     </ul>
+    <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
   </div>
-  <div>
-    <p>Tarif 3</p>
+  <div class="Karte">
+    <p>200 Euro</p>
     <ul>
       <li><a>Ohne Jahresbegrenzung</a></li>
       <li><a>Eine Änderung der Beiträge pro Jahr</a></li>
-      <li><a>200 Euro</a></li>
+      <li><a>Hohe Priorität bei der Beitragserstellung</a></li>
+      <li><a>Hohe Priorität bei der Beitragsanpassung</a></li>
     </ul>
-  </div>
-  <div>
-    <a>Tarife buchen >></a>
     <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
   </div>
 </div>
-<div>
+<div class="information">
   <h1>Allgemeine Informationen</h1>
   <p>Für die Gestaltung ihrere Seite bekommen sie nach der Buchung eines Tarifs,
   eine Bestätigungsemail. In der Email befinden sich ein kompletter Guide für die

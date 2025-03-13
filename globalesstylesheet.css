@@ -1,0 +1,25 @@
+/* Beispiel ohne <uniquifier> und mit einem korrekten Gewicht */
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Beispiel für normales Gewicht */
+  font-style: normal;
+}
+
+/* Beispiel mit fettem Gewicht */
+.lexend-deca-bold {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Beispiel für fett */
+  font-style: normal;
+}
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.antic-didone-regular {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-style: normal;
+}
