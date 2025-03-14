@@ -1,3 +1,6 @@
+a{
+  font-family: Avenir;
+}
 nav{
   /*grid-area: nav;*/
   height: 50px;
@@ -46,75 +49,76 @@ nav li a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding: 100px;
-  margin: 50px;
+  padding-top: 190px;
+  padding-bottom: 150px;
 }
 .preise li {
   list-style: none;
-  padding: 10px 30px;
+  padding: 7px 30px;
   background-image: url(
   "hakchen.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 20px;
+  margin: 5px;
+}
+.preise .Karte_2 li {
+  list-style: none;
+  padding: 10px 35px;
+  background-image: url(
+  "hakchen.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;
+  margin: 5px;
+  font-size: larger;
 }
 .Karte {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; /* Preis oben, Liste in der Mitte, Button unten */
-  padding: 20px;
   background: #f4f4f4;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  min-width: 250px;
-  width: 100%;
-  min-height: 400px; /* Alle Karten gleich hoch */
+  width: 300px;
+  min-height: 300px; /* Alle Karten gleich hoch */
+  height: 360px;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-/*
-.preise li {
-  list-style: none;
-  padding: 10px 30px;
-  background-image: url(
-  "hakchen.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px;
-}
- Layout für die Container
-.preise {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-layouts der karten
-.Karte{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #eada6c;
-  border: black;
-  border-radius: 20px;
-  width: 400px;
-  margin: 70px;
-  justify-content: center;
-}
-
 .Karte p{
   font-family: "Lexend Deca";
   font-weight: bold;
-  font-size: xxx-large;
-  justify-content: center;
-  align-items: center;
+  font-size: xx-large;
+  padding: 0px;
+  margin: 0px;
 }
-.button{
-  width: 100%;
-  padding: 12px 35px;
-  margin-top: 1rem;
+.Karte_2{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  font-family: "Avenir";
-  font-weight: normal;
+  justify-content: space-between; /* Preis oben, Liste in der Mitte, Button unten */
+  background: #f4f4f4;
+  border-style: solid;
+  border-color: #2E2B40;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 370px;
+  min-height: 350px; /* Alle Karten gleich hoch */
+  height: 400px;
+  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transform: translateY(20px);
+}
+.Karte_2 p{
+  font-family: "Lexend Deca";
+  font-weight: bold;
+  font-size: xxx-large;
+  padding: 0px;
+  margin: 0px;
 }
 .information{
   display: flex;
@@ -127,61 +131,42 @@ layouts der karten
   font-family: "Lexend Deca";
   font-weight: bold;
   font-size: xxx-large;
-  margin: 100px;
+  margin: 80px;
   padding-top: 70px;
-  color: #eada6c;
+  color: #f36c3a;
 }
 .information p{
   font-family: Avenir;
   padding-right: 200px;
   padding-left: 200px;
   font-size: x-large;
-  color: #EADA6C;
+  color: #f36c3a;
   text-align: center;
 }
-
- Grundlegendes Styling für jede Karte
-.card {
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  padding: 20px;
-  width: 250px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card p {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.card li {
-  margin: 8px 0;
-  color: #333;
-}
-ul a{
-  align-items: center;
-}
-
-Button Styling*/
+/*Button Styling*/
 .Karte .button {
   display: inline-block;
   justify-self: center;
-  background-color: #007bff;
+  background-color: #f36c3a;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
-  margin-top: 20px;
+}
+.Karte_2 .button:hover {
+  background-color: #eada6c;
+}
+.Karte_2 .button {
+  display: inline-block;
+  justify-self: center;
+  background-color: #f36c3a;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.Karte .button:hover {
+  background-color: #eada6c;
 }
 
-.card .button:hover {
-  background-color: #0056b3;
-}
 
