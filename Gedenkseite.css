@@ -13,12 +13,13 @@ div div img{
   padding: 32px;
 }
 h1{
-  padding: 70px;
+  padding: 2vw;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin-bottom: 20%;
 }
 /* 4 Spalten gleiche breite nebeneinander */
 .column {

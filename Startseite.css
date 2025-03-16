@@ -252,6 +252,12 @@ h3{
     /* padding-bottom: 200px; */
     position: relative;
   }
+  .images{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -120px;
+  }
 }
 @media only screen and (max-width: 768px){
   nav ul {
@@ -267,6 +273,13 @@ h3{
   .my-button {
     display: block;
     color: white;
+  }
+  h3{
+    font-size: 3rem;
+    top: -95px;
+  }
+  .images{
+    margin-top: -100px;
   }
 }
 

@@ -19,7 +19,10 @@
     </div>
     <!--Navigation-->
     <nav>
-      <ul>
+      <button class="my-button" id="my-button">
+        <a class="fas fa-bars">Menü</a>
+      </button>
+      <ul id="mynav">
         <li><a href="Startseite.html">Startseite</a></li>
         <li><a href="Gedenkseite.html">Gedenkseite</a></li>
         <li><a href="Leistungen.html">Leistungen</a></li>
@@ -31,7 +34,6 @@
 <div class="Einträge">
   <!--Blogeinträge gedenkseiten-->
   <h1>Wir erinnern uns an:</h1>
-
   <div class="row">
     <div class="column">
       <div class="container">
@@ -83,4 +85,12 @@
     <a href="/datenschutz.html">Datenschutz</a>
   </p>
 </footer>
+<script>
+  const button = document.getElementById("my-button");
+  const nav = document.getElementById("mynav");
+
+  button.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </html>

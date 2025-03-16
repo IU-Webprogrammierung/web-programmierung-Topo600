@@ -77,3 +77,40 @@ footer a{
   text-decoration: none;
   color: white;
 }
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  text-decoration: none;
+  display: none;
+}
+
+.my-button:focus {
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  nav{
+    position: relative;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+nav ul a{
+  color: white;
+}
+  nav ul.show {
+    display: flex;
+    background: #2E2B40;
+    text-align: center;
+    padding: 0;
+  }
+
+  .my-button {
+    display: block;
+  }
+}

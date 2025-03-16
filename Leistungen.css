@@ -82,7 +82,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2E2B40;
+  background-color: #eada6c;
   height: 800px;
 }
 .information h1{
@@ -91,14 +91,14 @@ body, html {
   font-size: xxx-large;
   margin: 80px;
   padding-top: 70px;
-  color: #f36c3a;
+  color: #2E2B40;
 }
 .information p{
   font-family: Avenir;
   padding-right: 200px;
   padding-left: 200px;
   font-size: x-large;
-  color: #f36c3a;
+  color: #2E2B40;
   text-align: center;
 }
 /*Button Styling*/
