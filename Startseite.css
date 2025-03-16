@@ -3,7 +3,7 @@ Grid Container für die ganze Seite*/
 .generalContainer{
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 100vh auto auto;
   grid-template-areas:
         "main main main"
@@ -212,7 +212,81 @@ h3{
   margin-top: -100px;
 }*/
 /*480/768/1080*/
-@media only screen and (max-width:480px){
+/*new*/
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  text-decoration: none;
+  display: none;
+}
 
+.my-button:focus {
+  outline: none;
+}
+@media only screen and (max-width: 1080px){
+  .parallax {
+    position: relative;
+    height: 150vh; /* Höhe des Parallax-Containers */
+    background-image: url('ringelblume_1080.png'); /* Hintergrundbild für Parallax */
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Inhalt für den Parallax-Bereich */
+  .content {
+    /*
+    position: absolute;
+    top: 100%; /* Positionierung
+    left: 50%;
+    transform: translate(-50%, -50%);  Zentrieren des Inhalts
+    text-align: center;
+    z-index: 2; Damit der Inhalt über dem Parallax-Bereich bleibt */
+    color: white;
+    padding: 100px;
+    position: fixed;
+  }
+  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
+  .testsektion {
+    height: 120vh;
+    background-image: url('ringelblume_bunt_1080.png'); /* Parallax-Hintergrundbild */
+    background-attachment: fixed; /* Parallax-Effekt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Sektion unter Parallax */
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+    background-image: url("Ringelblume_Bunt_1.png");
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 768px){
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: block;
+    color: white;
+  }
 }
 

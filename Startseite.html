@@ -19,8 +19,10 @@
           </div>
           <!--Navigation-->
           <nav>
-            
-            <ul>
+            <button class="my-button" id="my-button">
+              <a class="fas fa-bars">Menü</a>
+            </button>
+            <ul id="mynav">
               <li><a href="Startseite.html">Startseite</a></li>
               <li><a href="Gedenkseite.html">Gedenkseite</a></li>
               <li><a href="Leistungen.html">Leistungen</a></li>
@@ -118,4 +120,12 @@
       <!--Grid Container ende-->
     </div>
   </body>
+<script>
+  const button = document.getElementById("my-button");
+  const nav = document.getElementById("mynav");
+
+  button.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
 </html>
