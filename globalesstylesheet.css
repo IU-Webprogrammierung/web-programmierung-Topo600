@@ -64,3 +64,16 @@ nav li a {
   justify-content: center;
   padding-top: 200px;
 }
+footer{
+  background-color: #2E2B40;
+  color: white;
+  height: 300px;
+  padding: 50px;
+}
+footer p{
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}

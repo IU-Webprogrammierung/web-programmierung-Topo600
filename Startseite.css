@@ -108,7 +108,7 @@ span{
 
 /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
 .testsektion {
-
+  position: relative;
   height: 100vh;
   padding: 20px;
   background-image: url('Ringelblume_Bunt.png'); /* Parallax-Hintergrundbild */
@@ -137,10 +137,10 @@ span{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.section h2{
-  position: relative;
-  top: -15%;
-  background-color: #f2f2f2;
+h2{
+  position: sticky;
+  top: 50%;
+  z-index: 10;
 }
 .section p{
   position: relative;
@@ -160,13 +160,19 @@ div div img{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: -4%;
+  top: -5%;
+  margin-bottom: 300px;
 }
 
 .images span{
   font-size: 5rem;
 }
-
+h3{
+  font-size: 7rem;
+  top: -224px;
+  /* padding-bottom: 200px; */
+  position: relative;
+}
 .erstellen{
   display: flex;
   flex-direction: column;
@@ -194,6 +200,13 @@ div div img{
 .number3{
   margin-left: 50px;
 }
-
+/*anderes parallax scrolling*/
+.testsektion1{
+  background-color: white;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+}
 
 
