@@ -108,7 +108,6 @@ span{
 
 /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
 .testsektion {
-  position: relative;
   height: 100vh;
   padding: 20px;
   background-image: url('Ringelblume_Bunt.png'); /* Parallax-Hintergrundbild */
@@ -138,9 +137,6 @@ span{
   background-size: cover;
 }
 h2{
-  position: sticky;
-  top: 50%;
-  z-index: 10;
 }
 .section p{
   position: relative;
@@ -200,13 +196,13 @@ h3{
 .number3{
   margin-left: 50px;
 }
-/*anderes parallax scrolling*/
+/*anderes parallax scrolling
 .testsektion1{
   background-color: white;
   height: 300px;
   position: relative;
   z-index: 1;
   margin-top: -100px;
-}
+}*/
 
 
