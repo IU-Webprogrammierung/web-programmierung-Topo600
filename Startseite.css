@@ -19,13 +19,16 @@ main{
 footer{
   grid-area: footer;
 }
-
 body, html {
   height: 100%;
   margin: 0;
 }
+nav li a {
+  color: white;
+}
+/*
 nav{
-  /*grid-area: nav;*/
+  /*grid-area: nav;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -60,6 +63,7 @@ li a {
   z-index: 3;
   width: 100%;
 }
+*/
 /* Parallax-Scrolling Effekt */
 .parallax {
   display: flex;
@@ -97,6 +101,9 @@ h1 {
 p {
   font-size: 1.5rem;
   color: black;
+}
+span{
+  font-family: "Lexend Deca";
 }
 
 /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
@@ -139,12 +146,14 @@ p {
   position: relative;
   top: -15%;
   background-color: #f2f2f2;
+  text-align: center;
 }
 div div img{
   width: 200px;
   height: 200px;
   background-color: #eada6c;
   padding: 60px;
+  border-radius: 10px;
 }
 .images {
   position: relative;
