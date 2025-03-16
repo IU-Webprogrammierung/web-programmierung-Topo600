@@ -1,0 +1,32 @@
+.Logo{
+    max-width: 250px;
+    max-height: 60px;
+    padding: 20px;
+}
+.button{
+  margin: 10px;
+    background-color: #2E2B40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  text-decoration: none;
+  }
+img{
+  max-width: 500px;
+}
+  button:hover {
+    background-color: #f36c3a;
+  }
+  .text{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
