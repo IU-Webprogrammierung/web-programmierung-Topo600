@@ -12,6 +12,9 @@ div div img{
   text-align: center;
   padding: 32px;
 }
+h1{
+  padding: 70px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;

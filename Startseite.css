@@ -128,7 +128,7 @@ span{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 50vh;
   padding: 20px;
   background-image: url("Ringelblume_Bunt_1.png");
   background-attachment: fixed; /* Parallax-Effekt nach WC3*/
@@ -138,6 +138,13 @@ span{
 }
 h2{
 }
+.erstellen p:first-of-type,
+.qrcode p:first-of-type,
+.herz p:first-of-type {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .section p{
   position: relative;
   top: -15%;
@@ -204,5 +211,8 @@ h3{
   z-index: 1;
   margin-top: -100px;
 }*/
+/*480/768/1080*/
+@media only screen and (max-width:480px){
 
+}
 
