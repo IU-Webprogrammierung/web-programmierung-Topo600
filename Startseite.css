@@ -108,10 +108,6 @@ span{
 
 /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
 .testsektion {
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   height: 100vh;
   padding: 20px;
   background-image: url('Ringelblume_Bunt.png'); /* Parallax-Hintergrundbild */
@@ -140,14 +136,10 @@ span{
   background-repeat: no-repeat;
   background-size: cover;
 }
-<<<<<<< Updated upstream
 .section h2{
   position: relative;
   top: -15%;
   background-color: #f2f2f2;
-=======
-h2{
->>>>>>> Stashed changes
 }
 .section p{
   position: relative;
@@ -201,9 +193,5 @@ div div img{
 .number3{
   margin-left: 50px;
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 
