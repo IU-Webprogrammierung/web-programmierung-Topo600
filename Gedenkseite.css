@@ -4,6 +4,7 @@ body {
 }
 .Einträge{
   padding-top: 100px;
+  margin-bottom: 300px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
 }
 div div img{
   width: 100%;

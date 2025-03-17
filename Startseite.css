@@ -281,5 +281,114 @@ h3{
   .images{
     margin-top: -100px;
   }
+  /*parallax*/
+  .parallax {
+    position: relative;
+    height: 100vh; /* Höhe des Parallax-Containers */
+    background-image: url('ringelblume_768.png'); /* Hintergrundbild für Parallax */
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Inhalt für den Parallax-Bereich */
+  .content {
+    /*
+    position: absolute;
+    top: 100%; /* Positionierung
+    left: 50%;
+    transform: translate(-50%, -50%);  Zentrieren des Inhalts
+    text-align: center;
+    z-index: 2; Damit der Inhalt über dem Parallax-Bereich bleibt */
+    color: white;
+    padding: 20px;
+    position: relative;
+  }
+  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
+  .testsektion {
+    height: 120vh;
+    background-image: url('ringelblume_bunt_768.png'); /* Parallax-Hintergrundbild */
+    background-attachment: fixed; /* Parallax-Effekt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Sektion unter Parallax */
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+    background-image: url("Ringelblume_Bunt_1.png");
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+    /* Entfernt alle vorher gesetzten Styles
+    .parallax {
+      all: unset;
+    }
+
+    .content {
+      all: unset;
+    }
+
+    .testsektion {
+      all: unset;
+    }
+
+    .section {
+      all: unset;
+    }*/
+  .parallax {
+    position: relative;
+    height: 100vh; /* Höhe des Parallax-Containers */
+    background-image: url('ringelblume_480.png'); /* Hintergrundbild für Parallax */
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Inhalt für den Parallax-Bereich */
+  .content {
+    /*
+    position: absolute;
+    top: 100%; /* Positionierung
+    left: 50%;
+    transform: translate(-50%, -50%);  Zentrieren des Inhalts
+    text-align: center;
+    z-index: 2; Damit der Inhalt über dem Parallax-Bereich bleibt */
+    color: white;
+    padding: 20px;
+    position: relative;
+  }
+  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
+  .testsektion {
+    height: 120vh;
+    background-image: url('ringelblume_bunt_480.png'); /* Parallax-Hintergrundbild */
+    background-attachment: fixed; /* Parallax-Effekt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Sektion unter Parallax */
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+    background-image: url("Ringelblume_Bunt_1.png");
+    background-attachment: fixed; /* Parallax-Effekt nach WC3*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
