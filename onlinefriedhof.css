@@ -1,16 +1,73 @@
-.vorstellung {
-  padding-top: 150px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.zitat{
+  padding: 15%;
   text-align: center;
-  background-color: #eada6c;
-  height: 40%;
+}
+.zitat h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.row{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+}
+.row .left{
+  overflow: hidden;
+}
+.row .left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row .right{
+  padding-left: 20px;
+}
+.row .right .content p{
+  /*folgt*/
+}
+/*Media Queries*/
+@media(max-width: 1080px){
+  .row .right .content{
+    padding-left: 0; /*über die ganze Seite*/
+    padding-right: 0;
+  }
+}
+@media(max-width: 768px){
+  .row {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+/*.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.responsive{
+  width: 50%;
+  height: auto;
+}
+.vorstellung {
+  padding: 180px;
+  position: relative;
+  text-align: center;
+}
+h1{
+  padding-top: 100px;
+  font-size: xxx-large;
+}
+.text{
+  background: #eada6c;
+  text-align: start;
+  padding: 4%;
+  width: 50%;
+}
+.text p{
+  font-size: x-large;
 }
 .navbarlogo{
-  background-color: white;
 }
 .kontakt {
   display: flex;
@@ -21,24 +78,27 @@
   text-align: center;
   position: relative;
 }
-/*das muss als festes bild gemacht werden*/
-.kontakt img {
-  width: 600px; /* feste größe um scalen zu verhindern */
-  position: absolute;
-  top: 6%; /* Passt die Höhe an */
-  left: 50%;
-  transform: translate(-50%, 0); /* Zentriert das Bild horizontal */
-  z-index: -1; /* Bild hinter dem Text */
-}
-
-.kontakt h1 {
+.kontakt h3 {
   position: relative;
-  z-index: 2; /* Überschrift bleibt über dem Bild */
   margin-top: 0;
 }
-@media only screen and (max-width: 768px){
-  .vorstellung{
-    padding: 5%;
-    padding-top: 30%;
-  }
+.vorstellung {
+  padding: 50px 20px;
 }
+
+.vorstellung h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10%;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+   align-items: stretch;
+  background: #eada6c;
+}
+.text{
+  padding: 4%;
+}*/

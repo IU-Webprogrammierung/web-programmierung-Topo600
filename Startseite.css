@@ -58,6 +58,13 @@ li a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/*
+.parallax a{
+  font-size: 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+}
 
 /* Inhalt für den Parallax-Bereich */
 .content {
