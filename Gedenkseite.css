@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  pading: 0;
+}
+.Einträge{
+  padding-top: 100px;
+  margin-bottom: 300px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
+}
+div div img{
+  width: 100%;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+h1{
+  padding: 2vw;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 20%;
+}
+/* 4 Spalten gleiche breite nebeneinander */
+.column {
+  flex: 25%; /*mit flex*/
+  max-width: 25%;
+  padding: 0 4px;
+  box-sizing: border-box; /*padding in die 25% eingerechnet, kein überfluss.*/
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.container {
+  position: relative;
+/*width: 50%;*/
+/*max-width: 300px;*/
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through*/
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+opacity: 1;
+}
+@media only screen and (max-width: 768px){
+  .container .overlay {
+    opacity: 1;
+  }
+  .overlay {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.2); /* Black see-through*/
+    color: #f1f1f1;
+    width: 100%;
+    opacity:0;
+    color: white;
+    font-size: 0.5rem;
+    padding: 10px;
+    text-align: center;
+  }
+}

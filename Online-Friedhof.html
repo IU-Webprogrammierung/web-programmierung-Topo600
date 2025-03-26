@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Forum&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="globalesstylesheet.css">
+  <link rel="stylesheet" href="onlinefriedhof.css">
+  <title>Title</title>
+</head>
+<body>
+<!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
+  <header>
+    <section class="navbarlogo">
+      <div class="logoContainer">
+        <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
+      </div>
+      <!--Navigation-->
+      <nav>
+        <button class="my-button" id="my-button">
+          <a class="fas fa-bars">Menü</a>
+        </button>
+        <ul id="mynav">
+          <li><a href="Startseite.html">Startseite</a></li>
+          <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+          <li><a href="Leistungen.html">Leistungen</a></li>
+          <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <!--Einleitung, Zitat-->
+  <div class="zitat">
+    <h1>"Das Leben der<br>verstorbenen, liegt in<br>den Erinnerungen<br> der Lebenden."</h1>
+  </div>
+  <!--Container Bild(links) und Text(rechts)-->
+  <div class="row">
+    <!--Container Bild(links)-->
+    <div class="left">
+      <img src="4f08333722433bfb1a7bd152c42c55ef.jpg" class="responsive" alt="Kerzen und Blumen">
+    </div>
+    <!--Container Text(rechts)-->
+    <div class="right">
+      <div class="content">
+        <h2>Der Online-Friedhof</h2>
+        <p>Jeder Mensch hinterlässt Spuren – Erinnerungen, Geschichten, Momente, die
+          nicht verblassen sollten. <br> Bei einem Spaziergang über den Friedhof
+          kommen Fragen auf: Wer war
+          diese Person? <br>Welche Geschichte steckt hinter dem Namen? <br>gibt es hinterbliebene
+          die eine Geschichte erzählen möchten aber nicht wissen wie und wo ?<br>
+          Daraus entstand die Idee des Online-Friedhofs.<br> Der Online-Friedhof bietet einen Ort,
+          an dem Erinnerungen bewahrt und
+          geteilt werden können. <br>Ein Raum für alle, die sich erinnern, gedenken und
+          Geschichten weitertragen möchten.</p>
+      </div>
+    </div>
+  </div>
+  <!--end Container-->
+  <div class="kontakt">
+    <h3>Kontakt</h3>
+    <address>
+      <p>Email: <a>onlinefriedhof@gmail.com</a></p>
+      <p>Telefon: <a>+49 1234567</a></p>
+      <p>Adresse: Musterstraße 1, 12345 Musterstadt</p>
+    </address>
+  </div>
+</body>
+<footer>
+  <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
+    <a href="/impressum.html">Impressum</a> |
+    <a href="/datenschutz.html">Datenschutz</a>
+  </p>
+</footer>
+<script>
+  const button = document.getElementById("my-button");
+  const nav = document.getElementById("mynav");
+
+  button.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+</html>

@@ -2,9 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Forum&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <!--<link rel="stylesheet" href="globalesstylesheet.css">-->
+  <link rel="stylesheet" href="Startseite.css">
   <title>Startseite</title>
-  <p>zeig mal text an, ok das funktioniert;) DANN COMMITE !<3</p>
 </head>
-<body>
-</body>
+  <body>
+      <!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
+      <header>
+          <!--Navigation-->
+          <nav class="navbar">
+            <div class="logoContainer">
+              <img class="Logo" src="Logoweiß.png" alt="Logo Vektorgrafik einer brücke">
+            </div>
+            <button class="my-button" id="my-button">Menü</button>
+            <ul id="mynav">
+              <li><a href="Startseite.html">Startseite</a></li>
+              <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+              <li><a href="Leistungen.html">Leistungen</a></li>
+              <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+            </ul>
+          </nav>
+      </header>
+      <main>
+        <!--Parallax-Bereich mit Hintergrundbild -->
+        <div class="parallax">
+          <!--Inhalt über dem Parallax-Bild -->
+          <a>Hallo ich bin ein text kannst du mich sehen</a>
+          <div class="content">
+            <!--<h1>Bringe Leben in Deine Erinnerungen</h1>
+            <p>Erstelle eine digitale Gedenkseite – teile Fotos, Geschichten und Erinnerungen
+              von deinen Liebsten</p>-->
+          </div>
+        </div>
+        <!--Sektion mit transparentem Bild nach dem Parallax -->
+        <div class="testsektion">
+        </div>
+        <div class="testsektion1">
+        </div>
+        <!--Weitere Sektionen -->
+        <div class="section">
+          <!--<h2>Erinnerungen</h2>
+          <p>Die Geschichten von Menschen prägen und verändern uns. <br>Jedes Leben macht
+            einzigartige Erfahrungen von denen wir lernen können. <br> Entdecke wie du Erinnerungen
+            festhalten kannst.</p>-->
+        </div>
+        <!--container für headline, kleiner Text und cta-button
+        <div class="einstieg">
+          <div class="headline1">
+          <h1>Erinnerungen bewahren, Liebe teilen,
+            für immer verbunden sein</h1>
+          <p>Erstelle eine digitale Gedenkseite – teile Fotos, Geschichten und Erinnerungen
+            von deinen Liebsten und halte ihr Andenken lebendig.</p>
+          <a href="Leistungen.html" class="button" role="button" aria-label="Zu der Seite Leistungen">Jetzt Seite gestalten</a>
+          </div>
+            //vorbereitung bilder für parallax scroll effekt
+          <div class="Bilder">
+            <img class="initparallaxscroll" src="Sternenhimmel.jpg" alt="Blau gefüllter Hintergrund">
+            <img class="initparallaxscroll_1" src="Brücke.png" alt="Brücke aus orangenen Geranien">
+          </div>
+          //container ende
+        </div>-->
+      <!--</header>-->
+      <!--main content, headline 2, Text und einführung in das konzept durch icons-->
+      <!--<main>-->
+        <!--
+        <div>
+          <h2>Erinnerungen</h2>
+          <p>Die Geschichten von Menschen prägen und verändern uns. Jedes Leben macht
+            einzigartige Erfahrungen. Von den Zeugen der Zeit können
+            wir viel lernen, wenn wir aufmerksam sind. </p>
+        </div>
+        -->
+        <!--div für einführung in konzept mit icons-->
+        <h3>So funktioniert's</h3>
+
+        <div class="images">
+          <span class="number1">1</span>
+          <div class="erstellen">
+              <img src="bearbeiten.png" alt="Icon Stift und Blatt">
+            <p>Inhalte Erstellen</p>
+            <p>Überlege dir welche Erinnerungen auf deiner
+            Seite stehen sollen und schicke uns alle wichtigen Inhalte</p>
+          </div>
+          <span class="number2">2</span>
+          <div class="qrcode">
+            <img src="qr-code.png" class="bild1" alt="Icon QR-Code">
+            <p class="h_1">QR-Code erhalten</p>
+            <p class="text1">Wir erstellen deine Seite und schicken dir einen persönlichen
+            QR-Code um auf die Seite zu gelangen</p>
+          </div>
+          <span class="number3">3</span>
+          <div class="herz">
+            <img src="herz.png" alt="icon herz">
+            <p>Gedenkseite aufrufen</p>
+            <p>Jetzt kannst du deine Seite anschauen wann und wo immer du möchtest
+            um dich an deine liebsten zu erinnern.</p>
+          </div>
+        </div>
+        <div>
+
+        </div>
+      </main>
+      <footer>
+        <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
+          <a href="/impressum.html">Impressum</a> |
+          <a href="/datenschutz.html">Datenschutz</a>
+        </p>
+      </footer>
+  </body>
+<script>
+  //Variablen geändert(const zu let) für mehr accessibility mit "Menü" & "Schließen" Button
+  let button = document.getElementById("my-button");
+  let nav = document.getElementById("mynav");
+  let navLinks = nav.querySelectorAll("li");
+
+  //Menu öffnen auf Klick
+  button.addEventListener("click", () => {
+    nav.classList.toggle("show");
+
+    //Text ändern wenn das Menu aufgeht
+    if (nav.classList.contains("show")) {
+      button.textContent = "Schließen";
+    } else {
+      button.textContent = "Menü";
+    }
+  });
+
+  //for each Schleife für jeden Klick auf einen Link Menu zurücksetzen
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", () => {
+      nav.classList.remove("show");
+      button.textContent = "Menü"; //Setzt den Text zurück
+    });
+  });
+</script>
 </html>

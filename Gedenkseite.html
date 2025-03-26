@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Forum&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="globalesstylesheet.css">
+  <link rel="stylesheet" href="Gedenkseite.css">
+  <title>Title</title>
+</head>
+<body>
+<!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
+<header>
+  <section class="navbarlogo">
+    <div class="logoContainer">
+      <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
+    </div>
+    <!--Navigation-->
+    <nav>
+      <button class="my-button" id="my-button">
+        <a class="fas fa-bars">Menü</a>
+      </button>
+      <ul id="mynav">
+        <li><a href="Startseite.html">Startseite</a></li>
+        <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+        <li><a href="Leistungen.html">Leistungen</a></li>
+        <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+<div class="Einträge">
+  <!--Blogeinträge gedenkseiten-->
+  <h1>Wir erinnern uns an:</h1>
+
+  <div class="row">
+
+    <div class="column">
+      <div class="container">
+        <img src="Rambo.JPG" alt="Hund namens Rambo" class="image">
+        <div class="overlay">
+          Rambo<br>
+          <a href="person2.html">Zu meiner Seite</a>
+        </div>
+      </div>
+      <!--containerfüroverlay-->
+    </div>
+
+    <div class="column">
+      <div class="container">
+        <img src="Rosemarie_Metzler.jpg" alt="Frau Rosemarie Metztler" class="image">
+        <div class="overlay">
+          Rosemarie Metztler<br>
+          <a href="person1.html">Zu meiner Seite</a>
+        </div>
+      </div>
+      <!--containerfüroverlay-->
+    </div>
+
+    <div class="column">
+      <!--fill me with a picture-->
+    </div>
+
+    <div class="column">
+      <!--fill me with a picture-->
+    </div>
+  </div>
+  <!--rowende-->
+  <!--blogeinträge - die können dann auch später mit einer datenbank verknüpft werden um dynamisch geladen zu werden
+  <div class="gallerie">
+    <a href="person1.html">
+      <img src="" alt="Bild Max Mustermann">
+      <p>Max Mustermann (1980 - 2020)</p>
+    </a>
+    <a href="person2.html">
+      <img src="" alt="Bild Erika Musterfrau">
+      <p>Erika Musterfrau (1975 - 2019)</p>
+    </a>
+    <a href="person3.html">
+      <img src="" alt="Bild Sabine Musterfrau">
+      <p>Sabine Musterfrau (1970 - 2010)</p>
+    </a>
+  </div>
+  für rambo bild spaeter mit hover effekt: <div class="container">
+        <img src="Rambo.JPG" alt="Avatar" class="image">
+        <div class="overlay">My Name is Rambo<br><a href="person2.html">Zu meiner Seite</a></div>
+      </div>
+      -->
+  </div>
+</body>
+<footer>
+  <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
+    <a href="/impressum.html">Impressum</a> |
+    <a href="/datenschutz.html">Datenschutz</a>
+  </p>
+</footer>
+<script>
+  const button = document.getElementById("my-button");
+  const nav = document.getElementById("mynav");
+
+  button.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+</script>
+</html>
