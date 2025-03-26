@@ -90,6 +90,7 @@ footer a{
 .my-button:focus {
   outline: none;
 }
+
 @media only screen and (max-width: 768px) {
   nav{
     position: relative;

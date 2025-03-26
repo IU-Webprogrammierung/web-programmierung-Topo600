@@ -6,22 +6,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Forum&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="globalesstylesheet.css">
+  <!--<link rel="stylesheet" href="globalesstylesheet.css">-->
   <link rel="stylesheet" href="Startseite.css">
   <title>Startseite</title>
 </head>
   <body>
       <!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
       <header>
-        <section class="navbarlogo">
-          <div class="logoContainer">
-            <img class="Logo" src="Logoweiß.png" alt="Logo Vektorgrafik einer brücke">
-          </div>
           <!--Navigation-->
-          <nav>
-            <button class="my-button" id="my-button">
-              <a class="fas fa-bars">Menü</a>
-            </button>
+          <nav class="navbar">
+            <div class="logoContainer">
+              <img class="Logo" src="Logoweiß.png" alt="Logo Vektorgrafik einer brücke">
+            </div>
+            <button class="my-button" id="my-button">Menü</button>
             <ul id="mynav">
               <li><a href="Startseite.html">Startseite</a></li>
               <li><a href="Gedenkseite.html">Gedenkseite</a></li>
@@ -29,7 +26,6 @@
               <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
             </ul>
           </nav>
-        </section>
       </header>
       <main>
         <!--Parallax-Bereich mit Hintergrundbild -->
@@ -119,11 +115,29 @@
       </footer>
   </body>
 <script>
-  const button = document.getElementById("my-button");
-  const nav = document.getElementById("mynav");
+  //Variablen geändert(const zu let) für mehr accessibility mit "Menü" & "Schließen" Button
+  let button = document.getElementById("my-button");
+  let nav = document.getElementById("mynav");
+  let navLinks = nav.querySelectorAll("li");
 
-  button.addEventListener('click', () => {
-    nav.classList.toggle('show');
+  //Menu öffnen auf Klick
+  button.addEventListener("click", () => {
+    nav.classList.toggle("show");
+
+    //Text ändern wenn das Menu aufgeht
+    if (nav.classList.contains("show")) {
+      button.textContent = "Schließen";
+    } else {
+      button.textContent = "Menü";
+    }
+  });
+
+  //for each Schleife für jeden Klick auf einen Link Menu zurücksetzen
+  navLinks.forEach((navLink) => {
+    navLink.addEventListener("click", () => {
+      nav.classList.remove("show");
+      button.textContent = "Menü"; //Setzt den Text zurück
+    });
   });
 </script>
 </html>
