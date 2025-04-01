@@ -83,6 +83,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10%;
   background-color: #eada6c;
 }
 .information h1{
@@ -96,11 +97,8 @@ body, html {
 }
 .information p{
   font-family: Avenir;
-  padding-right: 10vw;
-  padding-left: 10vw;
   font-size: x-large;
   color: #2E2B40;
-  text-align: center;
 }
 /*Button Styling*/
 .Karte .button {
@@ -130,6 +128,30 @@ body, html {
 .Karte .button:hover {
   background-color: #eada6c;
 }
+summary{
+  font-size: x-large;
+  font-family: "Avenir Black";
+}
+details{
+  cursor: pointer;
+  padding: 1%;
+  width: 50%;
+  background: white;
+  color: #2E2B40;
+  font-size: 2rem;
+  border-radius: 3px ;
+  border-style: solid;
+  margin: 1%;
+}
+details[open] summary{
+  margin-bottom: 10px;
+  color: #f36c3a;
+}
+details p{
+  font-size: 1.5rem;
+  padding: 1%;
+}
+
 @media only screen and (max-width: 768px){
   .preise{
     flex-direction: column;

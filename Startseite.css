@@ -61,6 +61,7 @@ nav ul.show {
     align-items: center;
     justify-content: space-around;
     gap: 0;
+    padding: 0;/*das ist damit der text mittig ist*/
   }
 }
 /* Parallax-Scrolling Effekt */
