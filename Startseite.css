@@ -1,108 +1,120 @@
-.flex-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f2f2f2;
+/* Zeitlinie nach WC3 */
+.borderclass{
+  background-color: #2E2B40;
 }
-.container{
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 800px;
-  height: 280px;
-  margin: 20px;
-  border-style: solid;
-  border-color: black;
-}
-.container .img-container{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 100%;
-  background-color: #eada6c;
-}
-.container .details{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
+.timeline {
   box-sizing: border-box;
-  padding: 40px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;  /* oben und unten Padding, aber bleibt mittig */
 }
-.container .details h2{
+
+/* Zeitlinie */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  box-sizing: border-box;/*das muss hier sein*/
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Kreise */
+.container::after {
+  content: attr(data-number);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: -23px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #FF9F55;
+}
+
+/* Positionierung für den rechten Kreis */
+.right::after { /
+  transform: translateX(-20%); /* Korrigiert die Position */
+  left: -23px;
+}
+/* container links platzieren */
+.left {
+  left: 0;
+}
+
+/* Container rechts */
+.right {
+  left: 50%;
+}
+
+/* Pfeile */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Pfeile nach links */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+h3{
+  font-size: 7rem;
+  /* padding-bottom: 200px; */
+  position: relative;
+  color: #2E2B40;
   margin: 0;
-  padding: 0;
-  font-size: 2em;
-  line-height: 1em;
-  color: black;
+  bottom: -392px;
 }
-.container .details p{
-  max-width: 85%;
-  color: black;
-  font-size: 15px;
-  margin-bottom: 36px;
+main{
+  background-color: #2E2B40;
 }
-div div img{
-  width: 180px;
-  height: 180px;
-  padding: 40px;
-}
-
-@media(max-width: 768px){
-  .container {
-    height: auto;
-    width: 50%;
-  }
-  .container .img-container{
-    padding: 10px;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-  }
-  .container .img-container img{
-    max-width: 100%;
-  }
-  .container .details{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Allgemein*/
 body, html {
   padding: 0;
   margin: 0;
-}
-h1 {
-  font-size: 3rem;
-  color: #fff;
-}
-p {
-  font-size: 1.5rem;
-  color: black;
-}
-span{
-  font-family: "Lexend Deca";
 }
 header{
   position: absolute;
@@ -170,58 +182,6 @@ nav ul.show{
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* Anleitung für die Erstellung einer Seite */
-.erstellen p:first-of-type,
-.qrcode p:first-of-type,
-.herz p:first-of-type {
-  font-weight: bold;
-  font-size: 2rem;
-}
-.section p{
-  position: relative;
-  top: -15%;
-  background-color: #f2f2f2;
-  text-align: center;
-}
-
-.images {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  top: -5%;
-  margin-bottom: 300px;
-}
-.images span{
-  font-size: 5rem;
-}
-h3{
-  font-size: 7rem;
-  top: -224px;
-  /* padding-bottom: 200px; */
-  position: relative;
-}
-.erstellen{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 350px;
-  text-align: center;
-}
-.qrcode{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 350px;
-  text-align: center;
-}
-.herz{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-    max-width: 350px;
-    text-align: center;
- }
 /*480/768/1080*/
 /*new*/
 .my-button {
@@ -247,18 +207,6 @@ h3{
   .testsektion {
     height: 120vh;
     background-image: url('ringelblume_bunt_1080.png'); /* Parallax-Hintergrundbild */
-  }
-  h3{
-    font-size: 5rem;
-    top: -160px;
-    /* padding-bottom: 200px; */
-    position: relative;
-  }
-  .images{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -120px;
   }
 }
 @media only screen and (max-width: 768px){
@@ -292,13 +240,6 @@ h3{
     display: block;
     color: white;
   }
-  h3{
-    font-size: 3rem;
-    top: -95px;
-  }
-  .images{
-    margin-top: -100px;
-  }
   /*parallax*/
   .parallax {
     background-image: url('ringelblume_768.png'); /* Hintergrundbild für Parallax */
@@ -311,6 +252,35 @@ h3{
   /* Sektion unter Parallax */
   .section {
     background-image: url("Ringelblume_Bunt_1.png");
+  }
+  .timeline::after {
+    left: 35px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .right::after{
+    left: 12px;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after {
+    left: 12px;
+  }
+  /* alle rechten container sollen sich wie die linken verhalten */
+  .right {
+    left: 0%;
   }
 }
 @media screen and (max-width: 480px) {
