@@ -11,86 +11,119 @@
   <title>Title</title>
 </head>
 <body>
-<!--Header Anfang, einschließlich: Header;Navigation;Einstieg in die Website-->
+<!--Header Anfang, einschließlich: Header;Navigation-->
   <header>
-    <section class="navbarlogo">
+    <!--Navigation-->
+    <nav class="navbar">
       <div class="logoContainer">
         <img class="Logo" src="Logo.png" alt="Logo Vektorgrafik einer brücke">
       </div>
-      <!--Navigation-->
-      <nav>
-        <button class="my-button" id="my-button">
-          <a class="fas fa-bars">Menü</a>
-        </button>
-        <ul id="mynav">
-          <li><a href="Startseite.html">Startseite</a></li>
-          <li><a href="Gedenkseite.html">Gedenkseite</a></li>
-          <li><a href="Leistungen.html">Leistungen</a></li>
-          <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
-        </ul>
-      </nav>
-    </section>
+      <button class="menuButton" id="menuButton">Menü</button>
+      <ul id="navlinks">
+        <li><a href="Startseite.html">Startseite</a></li>
+        <li><a href="Gedenkseite.html">Gedenkseite</a></li>
+        <li><a href="Leistungen.html">Leistungen</a></li>
+        <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+      </ul>
+    </nav>
   </header>
-  <!--Kartencontainer-->
-  <div class="preise">
-    <!--Karte 1-->
-    <div class="Karte">
-      <p>50€</p>
-      <ul>
-        <li><a>3 Jahre</a></li>
-        <li><a>Vier Änderung der Beiträge</a></li>
-        <li><a>Hohe Priorität bei der Beitragsanpassung</a></li>
-      </ul>
-      <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
+  <main>
+    <div class="flexwrapper">
+      <div class="karte">
+        <div class="karten_header">
+          <!--<span class=""></span>-->
+          <h2>50€</h2>
+          <span class="zahlung">/Jahr</span>
+          <a href="#" class="btn">Tarif buchen</a>
+        </div>
+        <ul class="vorteile">
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">3 Jahre</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Vier Änderung der Beiträge</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Hohe Priorität bei der Beitragsanpassung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="karte">
+        <div class="karten_header">
+          <!--<span class=""></span>-->
+          <h2>5€</h2>
+          <span class="zahlung">/Jahr</span>
+          <a href="#" class="btn">Tarif buchen</a>
+        </div>
+        <ul class="vorteile">
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">1 Jahr</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Eine Änderung der Beiträge</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Nur bei neueintrag</a>
+          </li>
+        </ul>
+      </div>
+      <div class="karte">
+        <div class="karten_header">
+          <!--<span class=""></span>-->
+          <h2>200€</h2>
+          <span class="zahlung">/einmalige Zahlung</span>
+          <a href="#" class="btn">Tarif buchen</a>
+        </div>
+        <ul class="vorteile">
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Ohne Jahresbegrenzung</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Eine Änderung der Beiträge pro Jahr</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Hohe Priorität bei der Beitragserstellung</a>
+          </li>
+          <li>
+            <img src="annehmen.png" />
+            <a href="#">Hohe Priorität bei der Beitragsanpassung</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--Karte 1 ende-->
-    <!--Karte 2-->
-    <div class="Karte_2">
-      <p>5€</p>
-      <ul>
-        <li><a>1 Jahr</a></li>
-        <li><a>Eine Änderung der Beiträge</a></li>
-        <li><a>Nur bei neueintrag</a></li>
-      </ul>
-      <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
+    <!--Kartencontainer ende-->
+    <div class="information">
+      <h1>Alles auf einen Blick</h1>
+      <details>
+        <summary>Was passiert  nach der Buchung ? </summary>
+        <p>Erstmal bekommst du eine Bestätigungsemail für deine Buchung. In der Email befindet sich dann ein vollständiger
+        Guide für die Gestaltung Deiner Seite und alle weiteren Schritte.
+        </p>
+      </details>
+      <details>
+        <summary>Muss ich Vorkenntnisse haben um eine Seite zu machen ? </summary>
+        <p>Nein. Du teilst uns lediglich mit welche Informationen auf der Seite erscheinen sollen. Wir haben Design Vorlagen
+        oder du kannst gerne dein eigenes Design einreichen (beachte bitte die Richtlinien).
+        </p>
+      </details>
+      <details>
+        <summary>Was macht der QR-Code ? </summary>
+        <p>Der QR-Code kann mit einem Gerät eingescannt werden und führt dich sofort auf deine erstellte Seite. Du kannst
+        ihn gerne vervielfältigen und ihn weitergeben. Den Code bekommst du per Email zugeschickt sobald wir deine
+        Seite Online gestellt haben.
+        </p>
+      </details>
     </div>
-    <!--Karte 2 ende-->
-    <!--Karte 3-->
-    <div class="Karte">
-      <p>200€</p>
-      <ul>
-        <li><a>Ohne Jahresbegrenzung</a></li>
-        <li><a>Eine Änderung der Beiträge pro Jahr</a></li>
-        <li><a>Hohe Priorität bei der Beitragserstellung</a></li>
-        <li><a>Hohe Priorität bei der Beitragsanpassung</a></li>
-      </ul>
-      <a href="Online-Friedhof.html#Kontakt" class="button" role="button" aria-label="Einen Tarif buchen">Jetzt Tarif buchen</a>
-    </div>
-    <!--Karte 3 ende-->
-  </div>
-  <!--Kartencontainer ende-->
-  <div class="information">
-    <h1>Alles auf einen Blick</h1>
-    <details>
-      <summary>Was passiert  nach der Buchung ? </summary>
-      <p>Erstmal bekommst du eine Bestätigungsemail für deine Buchung. In der Email befindet sich dann ein vollständiger
-      Guide für die Gestaltung Deiner Seite und alle weiteren Schritte.
-      </p>
-    </details>
-    <details>
-      <summary>Muss ich Vorkenntnisse haben um eine Seite zu machen ? </summary>
-      <p>Nein. Du teilst uns lediglich mit welche Informationen auf der Seite erscheinen sollen. Wir haben Design Vorlagen
-      oder du kannst gerne dein eigenes Design einreichen (beachte bitte die Richtlinien).
-      </p>
-    </details>
-    <details>
-      <summary>Was macht der QR-Code ? </summary>
-      <p>Der QR-Code kann mit einem Gerät eingescannt werden und führt dich sofort auf deine erstellte Seite. Du kannst
-      ihn gerne vervielfältigen und ihn weitergeben. Den Code bekommst du per Email zugeschickt sobald wir deine
-      Seite Online gestellt haben.
-      </p>
-    </details>
-  </div>
+  </main>
 </body>
 <footer>
   <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
@@ -98,12 +131,5 @@
     <a href="/datenschutz.html">Datenschutz</a>
   </p>
 </footer>
-<script>
-  const button = document.getElementById("my-button");
-  const nav = document.getElementById("mynav");
-
-  button.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
+<script src="menu.js" defer></script>
 </html>

@@ -2,6 +2,9 @@ body {
   margin: 0;
   pading: 0;
 }
+nav li a{
+  color: black;
+}
 .Einträge{
   padding-top: 100px;
   margin-bottom: 300px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
@@ -9,7 +12,7 @@ body {
 div div img{
   width: 100%;
 }
-.header {
+.karten_header {
   text-align: center;
   padding: 32px;
 }

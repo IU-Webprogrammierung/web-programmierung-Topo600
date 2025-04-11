@@ -2,82 +2,112 @@ body, html {
   height: 100%;
   margin: 0;
 }
-.preise{
+nav li a{
+  color: black;
+}
+
+.flexwrapper{
+  padding-top: 150px;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 190px;
-  padding-bottom: 150px;
+  flex-wrap: wrap;
 }
-.preise li {
-  list-style: none;
-  padding: 7px 30px;
-  background-image: url(
-  "hakchen.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 20px;
-  margin: 5px;
+.karte {
+  width: 350px;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dae1f5;
+  border-radius: 10px;
 }
-.preise .Karte_2 li {
-  list-style: none;
-  padding: 10px 35px;
-  background-image: url(
-  "hakchen.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 25px;
-  margin: 5px;
-  font-size: larger;
-}
-.Karte {
+
+.karte .karten_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Preis oben, Liste in der Mitte, Button unten */
-  background: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  min-height: 300px; /* Alle Karten gleich hoch */
-  height: 360px;
-  margin: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 40px 40px 50px;
+  background-color: rgba(234, 218, 108, 0.5);
+  background-image: url("Blume.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
 }
-.Karte p{
-  font-family: "Lexend Deca";
-  font-weight: bold;
-  font-size: xx-large;
-  padding: 0px;
-  margin: 0px;
+
+.karte .karten_header h2 {
+  color: #2E2B40;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
 }
-.Karte_2{
+
+.karte .karten_header .zahlung {
+  display: block;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+
+.karte .karten_header .btn {
+  padding: 12px 36px;
+  color: #ffffff;
+  background-color: #2E2B40;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.karte .karten_header .btn:hover {
+  background-color: #2E2B40;
+}
+
+.karte .vorteile {
+  padding: 30px 62px 40px;
+}
+
+.karte .vorteile li {
+  list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Preis oben, Liste in der Mitte, Button unten */
-  background: #f4f4f4;
-  border-style: solid;
-  border-color: #2E2B40;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 370px;
-  min-height: 350px; /* Alle Karten gleich hoch */
-  height: 400px;
-  margin: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transform: translateY(20px);
+  margin-bottom: 22px;
 }
-.Karte_2 p{
-  font-family: "Lexend Deca";
-  font-weight: bold;
-  font-size: xxx-large;
-  padding: 0px;
-  margin: 0px;
+
+.karte .vorteile li:last-child {
+  margin-bottom: 0;
 }
+
+.karte .vorteile li img {
+  width: 13px;
+  margin-right: 10px;
+}
+
+.karte .vorteile li a {
+  color: #10182f;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Let's write the media query */
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .karte {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .karte .vorteile {
+    padding: 30px 50px 40px;
+  }
+}
+
+
+
 .information{
   display: flex;
   flex-direction: column;
@@ -99,34 +129,6 @@ body, html {
   font-family: Avenir;
   font-size: x-large;
   color: #2E2B40;
-}
-/*Button Styling*/
-.Karte .button {
-  display: inline-block;
-  justify-self: center;
-  background-color: #f36c3a;
-  color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.Karte_2 .button:hover {
-  background-color: #eada6c;
-}
-.Karte_2 .button {
-  display: inline-block;
-  justify-self: center;
-  background-color: #f36c3a;
-  color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  width: 100%;
-  text-align: center;
-  font-size: larger;
-}
-.Karte .button:hover {
-  background-color: #eada6c;
 }
 summary{
   font-size: x-large;
@@ -153,28 +155,7 @@ details p{
 }
 
 @media only screen and (max-width: 768px){
-  .preise{
-    flex-direction: column;
-    align-items: center;
-  }
-  .Karte_2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; /* Preis oben, Liste in der Mitte, Button unten */
-    background: #f4f4f4;
-    border-style: solid;
-    border-color: #2E2B40;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 370px;
-    min-height: 350px; /* Alle Karten gleich hoch */
-    height: 400px;
-    margin: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transform: translateY(5px);
-  }
+
 }
 
 

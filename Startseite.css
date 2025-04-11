@@ -9,19 +9,17 @@
   margin: 0 auto;
   padding: 50px 0;  /* oben und unten Padding, aber bleibt mittig */
 }
-
 /* Zeitlinie */
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
   background-color: white;
-  top: 0;
-  bottom: 0;
+  top: 80px;
+  bottom: 30%;
   left: 50%;
   margin-left: -3px;
 }
-
 .container {
   box-sizing: border-box;/*das muss hier sein*/
   padding: 10px 40px;
@@ -29,7 +27,6 @@
   background-color: inherit;
   width: 50%;
 }
-
 /* Kreise */
 .container::after {
   content: attr(data-number);
@@ -46,10 +43,10 @@
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 35px;
   color: #FF9F55;
+  font-family: Avenir;
 }
-
 /* Positionierung für den rechten Kreis */
 .right::after { /
   transform: translateX(-20%); /* Korrigiert die Position */
@@ -59,12 +56,10 @@
 .left {
   left: 0;
 }
-
 /* Container rechts */
 .right {
   left: 50%;
 }
-
 /* Pfeile */
 .left::before {
   content: " ";
@@ -78,7 +73,6 @@
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
-
 /* Pfeile nach links */
 .right::before {
   content: " ";
@@ -94,22 +88,19 @@
 }
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #f2f2f2;
   position: relative;
   border-radius: 6px;
 }
 h3{
-  font-size: 7rem;
-  /* padding-bottom: 200px; */
-  position: relative;
-  color: #2E2B40;
   margin: 0;
-  bottom: -392px;
+  font-size: 7vw;
+  color: #eada6c;
+  padding: 0;
 }
 main{
   background-color: #2E2B40;
 }
-
 
 /*Allgemein*/
 body, html {
@@ -121,70 +112,97 @@ header{
   width: 100%;
   z-index: 3;
 }
-/*Navbar*/
-.navbar{
-  display: flex;
-  align-items: center;
+.arrow {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
-nav ul{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
-nav ul li {
-  margin: 1rem;
+.arrow span:nth-child(2) {
+  animation-delay: -0.3s;
 }
-nav li a {
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+h1{
+  font-size: 4vw;
   color: white;
   text-align: center;
-  text-decoration: none;
-  font-family: "Avenir", sans-serif;
+  margin-bottom: 150px;
 }
-.Logo{
-  max-width: 250px;
-  max-height: 60px;
-  padding: 20px;
+.testsektion h2{
+  font-size: 3vw;
+  color: #2E2B40;
 }
-#my-button {
-  display: none;
-}
-nav ul.show{
-  left: 0%;
+.testsektion p{
+  font-size: 2vw;
+  color: #2E2B40;
 }
 /* Parallax-Scrolling Effekt */
 /* Erstes Bild */
 .parallax {
-  height: 100vh; /* Höhe des Parallax-Containers */
-  background-image: url('Ringelblume_SW.png'); /* Hintergrundbild für Parallax */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;/* Höhe des Parallax-Containers */
+  background-image: url('yaotl.png'); /* Hintergrundbild für Parallax */
   background-attachment: fixed; /* Parallax-Effekt nach WC3*/
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
+  background-color: #222222;
 }
 /* Zweites Bild, in der das transparente Bild erscheint */
 .testsektion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
-  padding: 20px;
-  background-image: url('Ringelblume_Bunt.png'); /* Parallax-Hintergrundbild */
+  background-image: url('yaotl1.png'); /* Parallax-Hintergrundbild */
   background-attachment: fixed; /* Parallax-Effekt */
-  background-position: center;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #eada6c;
+
 }
 /* Sektion unter Parallax */
 .section {
-  height: 50vh;
-  padding: 20px;
-  background-image: url("Ringelblume_Bunt_1.png");
+  background-color: #eada6c;
+  /*height: 100vh;*/
+  background-image: url("yaotl1.png");
   background-attachment: fixed; /* Parallax-Effekt nach WC3*/
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
 }
 /*480/768/1080*/
 /*new*/
-.my-button {
+.menuButton {
   background-color: transparent;
   border: 10px;
   color: black;
@@ -193,31 +211,29 @@ nav ul.show{
   text-decoration: none;
   display: none;
 }
-.my-button:focus {
+.menuButton:focus {
   outline: none;
 }
-
 /* Media Queries für Responsives Verhalten */
 @media only screen and (max-width: 1080px){
-  .parallax {
-    height: 150vh; /* Höhe des Parallax-Containers */
-    background-image: url('ringelblume_1080.png'); /* Anderes Hintergrundbild für Parallax */
+  .parallax{
+    background-image: url("yaotl_1080.png");
   }
-  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
-  .testsektion {
-    height: 120vh;
-    background-image: url('ringelblume_bunt_1080.png'); /* Parallax-Hintergrundbild */
+  .testsektion{
+    background-image: url("yaotl1_1080.png");
   }
 }
 @media only screen and (max-width: 768px){
-  header{
-    position: fixed;
-    background-color: black;
+  .parallax{
+    background-image: url("yaotl_768.png");
+  }
+  .testsektion{
+    background-image: url("yaotl1_768.png");
   }
   nav ul a{
     color: black;
   }
-  #my-button {
+  #menuButton {
     display: block;
     color: #ffffff;
   }
@@ -236,34 +252,18 @@ nav ul.show{
     gap: 0;
     padding: 0;/*das ist damit der text mittig ist*/
   }
-  .my-button {
+  .menuButton {
     display: block;
     color: white;
-  }
-  /*parallax*/
-  .parallax {
-    background-image: url('ringelblume_768.png'); /* Hintergrundbild für Parallax */
-  }
-  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
-  .testsektion {
-    height: 120vh;
-    background-image: url('ringelblume_bunt_768.png'); /* Parallax-Hintergrundbild */
-  }
-  /* Sektion unter Parallax */
-  .section {
-    background-image: url("Ringelblume_Bunt_1.png");
   }
   .timeline::after {
     left: 35px;
   }
-
-  /* Full-width containers */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
@@ -284,14 +284,11 @@ nav ul.show{
   }
 }
 @media screen and (max-width: 480px) {
-  .parallax {
-    background-image: url('ringelblume_480.png'); /* Hintergrundbild für Parallax */
+  .parallax{
+    background-image: url("yaotl1_480.png");
   }
-
-  /* Sektion unter dem Parallax, in der das transparente Bild erscheint */
   .testsektion {
-    height: 120vh;
-    background-image: url('ringelblume_bunt_480.png'); /* Parallax-Hintergrundbild */
+    background-image: url("yaotl_480.png");
   }
 }
 
