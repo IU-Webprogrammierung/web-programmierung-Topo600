@@ -60,33 +60,56 @@ h1{
 .seiten{
   text-decoration: none;
   color: #f36c3a;
+  font-size: 1.8vw;
 }
 footer{
   display: flex;
   flex-direction: column;
 }
 .container:hover .overlay {
-  opacity: 3;
+  opacity: 1;
+}
+@media only screen and (max-width: 1080px) {
+
 }
 @media only screen and (max-width: 768px){
-  .Logo{
-
+  .overlay a:first-of-type {
+    display: inline-block;
+    padding-bottom: 10px; /* oder mehr */
+    font-size: 2vw;
+  }
+.seiten{
+  font-size: 2.5vw;
+}
+  /* 4 Spalten gleiche breite nebeneinander */
+  .column {
+    flex: 33%; /*mit flex*/
+    max-width: 33%;
+    padding: 0 4px;
+    box-sizing: border-box; /*padding in die 25% eingerechnet, kein überfluss.*/
   }
   .container .overlay {
-    opacity: 3;
+    opacity: 1;
   }
   .overlay {
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.2); /* Black see-through*/
+    background: rgba(0, 0, 0, 0.5); /* Black see-through*/
     color: #f1f1f1;
     width: 100%;
-    opacity:0;
     color: white;
-    font-size: 0.5rem;
-    padding: 10px;
+    font-size: 0.8rem;
+    padding: 15px;
     text-align: center;
+  }
+}
+@media only screen and (max-width: 480px){
+  .overlay {
+    padding: 10px;
+  }
+  .overlay a:first-of-type {
+      padding-bottom: 5px;
   }
 }

@@ -1,32 +1,78 @@
-.Logo{
-    max-width: 250px;
-    max-height: 60px;
-    padding: 20px;
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .button{
-  margin: 10px;
-  background-color: #2E2B40;
+  background-color: #f36c3a;
   color: white;
   border: none;
-  padding: 10px 20px;
   font-size: 16px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
   }
 img{
-  max-width: 500px;
+  max-width: 450px;
 }
-  button:hover {
-    background-color: #f36c3a;
+h1{
+  font-size: 3vw;
+}
+button:hover {
+  background-color: #f36c3a;
+}
+.text{
+  padding: 30px 50px 150px 50px;
+}
+.text p{
+  margin: 5px 200px 20px 200px;
+  font-size: 1.5vw;
+}
+.person{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.person div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1080px) {
+  .text p{
+    margin: 5px 70px 20px 70px;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text p{
+    margin: 20px 40px 10px 40px;
+    font-size: 2.5vw;
   }
   .text{
-    margin: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    padding: 10px 15px 150px 15px;
   }
+  h1{
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .text p{
+    margin: 0 0 20px 0;
+    font-size: 3.2vw;
+  }
+  h1{
+    font-size: 5vw;
+  }
+  img{
+    max-width: 300px;
+  }
+}
+
 

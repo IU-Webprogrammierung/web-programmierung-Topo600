@@ -48,7 +48,6 @@ nav ul.show{
 }
 footer{
   background-color: #2E2B40;
-  color: white;
   height: 150px;
   padding: 50px;
 }
@@ -64,9 +63,10 @@ footer a{
   border: 10px;
   color: black;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   display: none;
+  font-family: Avenir;
 }
 
 .menuButton:focus {
@@ -125,5 +125,10 @@ nav ul a{
   .menuButton {
     display: block;
     color: white;
+  }
+  .Logo{
+    max-width: 200px;
+    max-height: 40px;
+    padding: 20px;
   }
 }

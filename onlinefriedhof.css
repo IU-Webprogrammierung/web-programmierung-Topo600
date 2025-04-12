@@ -7,35 +7,33 @@
   align-items: center;
 }
 address{
- font-size: 2vw;
+ font-size: 1.8vw;
+}
+h1{
+  font-size: 2.5vw;
+}
+h2{
+  font-size: 3.7vw;
+  padding: 25px;
+}
+h3{
+  font-size: 2.5vw;
 }
 .onlineFriedhof{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
-  padding-top: 250px;
-  padding-bottom: 250px;
-}
-h2{
-  font-size: 2vw;
+  padding: 250px 20px 250px 20px;
 }
 .onlineFriedhof p{
   font-size: 1.8vw;
-}
-h3{
-  font-size: 2vw;
 }
 .right{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.zitat h1{
-  font-size: 3.7vw;
-  font-weight: bold;
-  padding: 50px;
 }
 .row{
   width: 100%;
@@ -58,12 +56,36 @@ h3{
 }
 /*Media Queries*/
 @media(max-width: 1080px){
+  h1{
+    font-size: 3.5vw;
+  }
+  h2{
+    font-size: 3vw;
+  }
+  address{
+    font-size: 2.5vw;
+  }
   .row .right .content{
     padding-left: 0; /*über die ganze Seite*/
     padding-right: 0;
   }
 }
 @media(max-width: 768px){
+  h1{
+    font-size: 4.5vw;
+  }
+  h2{
+    font-size: 5vw
+  }
+  h3{
+    font-size: 4.5vw;
+  }
+  .onlineFriedhof p{
+    font-size: 3.5vw;
+  }
+  address{
+    font-size: 3.5vw;
+  }
   .zitat{
   text-align: center;
   }
