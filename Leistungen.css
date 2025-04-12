@@ -2,10 +2,6 @@ body, html {
   height: 100%;
   margin: 0;
 }
-nav li a{
-  color: black;
-}
-
 .flexwrapper{
   padding-top: 150px;
   display: flex;
@@ -20,7 +16,6 @@ nav li a{
   border: 1px solid #dae1f5;
   border-radius: 10px;
 }
-
 .karte .karten_header {
   display: flex;
   flex-direction: column;
@@ -32,21 +27,18 @@ nav li a{
   background-repeat: no-repeat;
   border-radius: 10px 10px 0 0;
 }
-
 .karte .karten_header h2 {
   color: #2E2B40;
   font-size: 46px;
   font-weight: 700;
   text-align: center;
 }
-
 .karte .karten_header .zahlung {
   display: block;
   font-size: 20px;
   line-height: 33px;
   margin-bottom: 30px;
 }
-
 .karte .karten_header .btn {
   padding: 12px 36px;
   color: #ffffff;
@@ -58,56 +50,31 @@ nav li a{
   text-decoration: none;
   transition: all 0.3s;
 }
-
 .karte .karten_header .btn:hover {
   background-color: #2E2B40;
 }
-
 .karte .vorteile {
   padding: 30px 62px 40px;
 }
-
 .karte .vorteile li {
   list-style: none;
   display: flex;
   align-items: center;
   margin-bottom: 22px;
 }
-
 .karte .vorteile li:last-child {
   margin-bottom: 0;
 }
-
 .karte .vorteile li img {
   width: 13px;
   margin-right: 10px;
 }
-
 .karte .vorteile li a {
   color: #10182f;
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
 }
-
-/* Let's write the media query */
-@media (max-width: 576px) {
-  body {
-    padding: 10px;
-  }
-
-  .karte {
-    width: 100%;
-    margin: 10px;
-  }
-
-  .karte .vorteile {
-    padding: 30px 50px 40px;
-  }
-}
-
-
-
 .information{
   display: flex;
   flex-direction: column;
@@ -155,7 +122,17 @@ details p{
 }
 
 @media only screen and (max-width: 768px){
+  details {
+    width: 90%;
+  }
+  .karte {
+    width: 100%;
+    margin: 10px;
+  }
 
+  .karte .vorteile {
+    padding: 30px 50px 40px;
+  }
 }
 
 

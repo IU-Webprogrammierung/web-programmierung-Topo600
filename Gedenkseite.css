@@ -2,12 +2,9 @@ body {
   margin: 0;
   pading: 0;
 }
-nav li a{
-  color: black;
-}
-.Einträge{
+.einträge{
   padding-top: 100px;
-  margin-bottom: 300px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
+  margin-bottom: 500px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
 }
 div div img{
   width: 100%;
@@ -46,7 +43,6 @@ h1{
   width: 100%;
   height: auto;
 }
-
 .overlay {
   box-sizing: border-box;
   position: absolute;
@@ -58,17 +54,26 @@ h1{
   transition: .5s ease;
   opacity:0;
   color: white;
-  font-size: 20px;
   padding: 10px;
   text-align: center;
 }
-
+.seiten{
+  text-decoration: none;
+  color: #f36c3a;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+}
 .container:hover .overlay {
-opacity: 1;
+  opacity: 3;
 }
 @media only screen and (max-width: 768px){
+  .Logo{
+
+  }
   .container .overlay {
-    opacity: 1;
+    opacity: 3;
   }
   .overlay {
     box-sizing: border-box;

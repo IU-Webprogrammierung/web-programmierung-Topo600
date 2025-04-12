@@ -108,9 +108,9 @@ body, html {
   margin: 0;
 }
 header{
-  position: absolute;
   width: 100%;
   z-index: 3;
+  background-color: #222222;
 }
 .arrow {
   position: absolute;
@@ -289,6 +289,9 @@ h1{
   }
   .testsektion {
     background-image: url("yaotl_480.png");
+  }
+  .timeline::after {
+    bottom: 35%;
   }
 }
 
