@@ -1,20 +1,16 @@
-body {
-  margin: 0;
-  pading: 0;
+h1{
+  padding: 2vw;
 }
 .einträge{
   padding-top: 100px;
-  margin-bottom: 500px;/*sonst kommt der footer hoch ? vielleicht nachträglich flex geben*/
+  margin-bottom: 500px;/*sonst kommt der footer hoch weil nicht genug inhalt da ist*/
 }
 div div img{
   width: 100%;
 }
-.karten_header {
+.karten-header {
   text-align: center;
   padding: 32px;
-}
-h1{
-  padding: 2vw;
 }
 .row {
   display: flex;
@@ -49,7 +45,7 @@ h1{
   bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5); /* Black see-through*/
-  color: #f1f1f1;
+  color: #f2f2f2;
   width: 100%;
   transition: .5s ease;
   opacity:0;
@@ -62,25 +58,22 @@ h1{
   color: #f36c3a;
   font-size: 1.8vw;
 }
+.container:hover .overlay {
+  opacity: 1;
+}
 footer{
   display: flex;
   flex-direction: column;
 }
-.container:hover .overlay {
-  opacity: 1;
-}
-@media only screen and (max-width: 1080px) {
-
-}
 @media only screen and (max-width: 768px){
   .overlay a:first-of-type {
     display: inline-block;
-    padding-bottom: 10px; /* oder mehr */
+    padding-bottom: 10px;
     font-size: 2vw;
   }
-.seiten{
-  font-size: 2.5vw;
-}
+  .seiten{
+    font-size: 2.5vw;
+  }
   /* 4 Spalten gleiche breite nebeneinander */
   .column {
     flex: 33%; /*mit flex*/
@@ -97,9 +90,9 @@ footer{
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through*/
-    color: #f1f1f1;
+    color: #f2f2f2;
     width: 100%;
-    color: white;
+    color: #f2f2f2;
     font-size: 0.8rem;
     padding: 15px;
     text-align: center;

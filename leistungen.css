@@ -1,48 +1,49 @@
-body, html {
-  height: 100%;
-  margin: 0;
-}
+/* Preiskarten */
 .flexwrapper{
   padding-top: 150px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  background-image: url("blumen.png");
+  background-repeat: repeat;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 .karte {
   width: 350px;
   margin: 20px;
-  background-color: #ffffff;
-  border: 1px solid #dae1f5;
-  border-radius: 10px;
+  background-color: #f2f2f2;
+  border: 5px solid #f2f2f2;
+  border-radius: 15px;
 }
-.karte .karten_header {
+.karte .karten-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 40px 50px;
-  background-color: rgba(234, 218, 108, 0.5);
-  background-image: url("Blume.png");
+  background-color: #2E2B40;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px 10px 0 0;
 }
-.karte .karten_header h2 {
-  color: #2E2B40;
+.karte .karten-header h2 {
+  color: #eada6c;
   font-size: 46px;
   font-weight: 700;
   text-align: center;
 }
-.karte .karten_header .zahlung {
+.karte .karten-header .zahlung {
   display: block;
   font-size: 20px;
   line-height: 33px;
   margin-bottom: 30px;
+  color: #eada6c;
 }
-.karte .karten_header .btn {
+.karte .karten-header .btn {
   padding: 12px 36px;
-  color: #ffffff;
-  background-color: #2E2B40;
+  color: #2E2B40;
+  background-color: #f36c3a;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 700;
@@ -50,8 +51,8 @@ body, html {
   text-decoration: none;
   transition: all 0.3s;
 }
-.karte .karten_header .btn:hover {
-  background-color: #2E2B40;
+.karte .karten-header .btn:hover {
+  background-color: #eada6c;
 }
 .karte .vorteile {
   padding: 30px 62px 40px;
@@ -75,15 +76,7 @@ body, html {
   font-weight: 400;
   text-decoration: none;
 }
-.information{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 200px;
-  background-color: #eada6c;
-  margin-top: 130px;
-}
+/* zweiter Teil der Seite */
 h1{
   font-family: "Lexend Deca";
   font-weight: bold;
@@ -92,6 +85,14 @@ h1{
   padding-top: 70px;
   color: #2E2B40;
   text-align: center;
+}
+.information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 200px;
+  background-color: #eada6c;
 }
 summary{
   font-size: 1.8rem;

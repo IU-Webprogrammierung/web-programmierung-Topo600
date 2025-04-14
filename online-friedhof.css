@@ -1,14 +1,3 @@
-.kontakt{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-address{
- font-size: 1.8vw;
-}
 h1{
   font-size: 2.5vw;
 }
@@ -19,15 +8,16 @@ h2{
 h3{
   font-size: 2.5vw;
 }
-.onlineFriedhof{
+.kontakt{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   text-align: center;
-  padding: 250px 20px 250px 20px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
-.onlineFriedhof p{
-  font-size: 1.8vw;
+address{
+ font-size: 1.8vw;
 }
 .right{
   display: flex;
@@ -49,10 +39,15 @@ h3{
   height: 100%;
   object-fit: cover;
 }
-.row .right{
+.onlineFriedhof{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 250px 20px 250px 20px;
 }
-.row .right .content p{
-  /*folgt*/
+.onlineFriedhof p{
+  font-size: 1.8vw;
 }
 /*Media Queries*/
 @media(max-width: 1080px){

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="globalesstylesheet.css">
-  <link rel="stylesheet" href="Startseite.css">
+  <link rel="stylesheet" href="index.css">
   <title>Startseite</title>
 </head>
 <body>
@@ -13,41 +13,40 @@
   <!--Navigation-->
   <nav class="navbar">
     <div class="logoContainer">
-      <img class="Logo" src="Logoweiß.png" alt="Logo Vektorgrafik einer brücke">
+      <img class="Logo" src="logoweiß.png" alt="Logo Vektorgrafik einer brücke">
     </div>
     <button class="menuButton" id="menuButton">Menü</button>
     <ul id="navlinks">
-      <li><a href="Startseite.html">Startseite</a></li>
-      <li><a href="Gedenkseite.html">Gedenkseite</a></li>
-      <li><a href="Leistungen.html">Leistungen</a></li>
-      <li><a href="Online-Friedhof.html">Der Online-Friedhof</a></li>
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="gedenkseite.html">Gedenkseite</a></li>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="online-friedhof.html">Der Online-Friedhof</a></li>
     </ul>
   </nav>
 </header>
 <main>
-  <!--Parallax-Bereich mit Hintergrundbild -->
+  <!-- Parallax-Bereich mit Hintergrundbild -->
   <div class="parallax">
     <h1>Bringe Leben in <br>deine Erinnerungen</h1>
-    <div class="arrow">
+    <!-- Pfeile nach unten -->
+    <a href="#anker" class="arrow" aria-label="Zum nächsten Abschnitt scrollen">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </a>
   </div>
   <!--Sektion mit transparentem Bild nach dem Parallax -->
-  <div class="testsektion">
-    <p> <b>Erstelle eine digitale Gedenkseite</b> - <br>teile Fotos, Geschichten und Erinnerungen <br>von deinen Liebsten und halte ihr Andenken <br>
-      lebendig </p>
+  <div class="parallax-2" id="anker">
+    <p><b>Erstelle eine digitale Gedenkseite</b> - <br>teile Fotos, Geschichten und Erinnerungen <br>von deinen Liebsten und halte ihr Andenken <br>
+      lebendig</p>
   </div>
-  <!--Weitere Sektionen -->
-  <div class="section">
-  </div>
-  <div>
+  <section>
     <h3>So funktioniert's</h3>
     <div class="borderclass">
       <div class="timeline">
         <div class="container left" data-number="1">
           <div class="content">
+            <img src="bearbeiten.png" alt="Hover-Bild Bleistift" class="hover-img">
             <h2>Inhalte Erstellen</h2>
             <p>Überlege dir welche Erinnerungen auf deiner
               Seite stehen sollen und schicke uns alle wichtigen Inhalte</p>
@@ -55,6 +54,7 @@
         </div>
         <div class="container right" data-number="2">
           <div class="content">
+            <img src="qr-code.png" alt="Hover-Bild" class="hover-img">
             <h2>QR-Code erhalten</h2>
             <p>Wir erstellen deine Seite und schicken dir einen persönlichen
               QR-Code um auf die Seite zu gelangen.</p>
@@ -62,6 +62,7 @@
         </div>
         <div class="container left" data-number="3">
           <div class="content">
+            <img src="herz.png" alt="Hover-Bild" class="hover-img">
             <h2>Gedenkseite aufrufen & teilen</h2>
             <p>Jetzt kannst du deine Seite anschauen wann und wo immer du möchtest
               um dich an deine liebsten zu erinnern.</p>
@@ -69,7 +70,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </main>
 <footer>
   <p>&copy; 2025 Online-Friedhof. Alle Rechte vorbehalten.
